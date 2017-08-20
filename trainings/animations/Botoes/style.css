@@ -1,0 +1,155 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #2CC9AA;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+/* Configuração da tag a, */
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 150px 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #777;    
+}
+
+/* Quando o mouse é passado em cima muda a cor */
+header a:hover {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn-1 {
+    /* Tempo que dura a animação */
+    transition: .5s;
+}
+
+/* @keyframes faz animações */
+@keyframes btn2 {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        /* deg = unidade de medida para graus */
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0);        
+    }
+    75% {
+        transform: rotate(-10deg);        
+    }
+    100% {
+        transform: rotate(0);
+        
+    }
+}
+
+.btn-2 {
+    transition: .5s;
+}
+
+/* Quando o mouse passar em cima */
+.btn-2:hover {
+    /* Chama a animação */
+    animation-name: btn2;
+    /* Duração da animação */
+    animation-duration: .25s;
+    /* Tempo e velocidade da animação */
+    animation-timing-function: linear;
+    /* Quantidade de vezes que a animação é executada */
+    animation-iteration-count: 1;    
+}
+
+@keyframes btn3 {
+    0%{
+        transform: rotateX(0);
+    }
+    50%{
+        transform: rotateX(100deg);        
+    }
+    100%{
+        transform: rotateX(0);        
+    }
+}
+
+.btn-3 {
+    transition: 0.5s;
+}
+
+.btn-3:hover {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: btn3;
+    animation-delay: .5s;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes btn4 {
+    0%{
+        transform: rotate(0)        
+    }
+    25%{
+        transform: rotate(300deg)
+    }
+    50%{
+        transform: rotate(0)        
+    }
+    75%{
+        transform: rotate(-300deg)        
+    }
+    100%{
+        transform: rotate(0)                
+    }
+}
+
+.btn-4 {
+    transition: .5s
+}
+
+.btn-4:hover {
+    animation-name: btn4;
+    animation-delay: .2s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+}
+
+@keyframes btn5 {
+    0%{
+        width:100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+.btn-5 {
+    transition: .5s;
+}
+
+.btn-5:hover {
+    animation-name: btn5;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}

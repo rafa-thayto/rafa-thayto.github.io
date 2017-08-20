@@ -1,0 +1,30 @@
+/* transition: [property] [duration] [ease] [delay] */
+/* .element {
+    transition: opacity 300ms ease-in-out 1s;   
+}*/
+
+body {
+    padding: 20px;
+}
+
+.trigger {
+    width: 200px;
+    height:200px;
+    border: 20px solid #999;
+    background: #ddd;
+}
+
+.box {
+    display: inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    transition: transform 300ms easy-in-out 1s;
+    /* pointer-events faz com que vc não possa interagir com o elemento
+    ou seja, quando você colocar o cursor em cima da box vc n vai conseguir mantela*/
+    pointer-events: none;
+}
+
+.trigger:hover .box {
+    transform: translate(200px, 150px) rotate(20deg);
+}
