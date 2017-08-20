@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="fundo-externo">
-        <div id="fundo">
-            <img src="img/universo.jpg" alt="fundo da página"/>
-        </div>
-    </div>    
+    <header>
+        <button onclick="javascript: document.getElementById('player').volume -= 0.1">Diminuir volume</button>  
+        <button onclick="javascript: document.getElementById('player').volume += 0.1">Aumentar Volume</button>  
+        <div id="fundo-externo">
+            <div id="fundo">
+                <img src="img/universo.jpg" alt="fundo da página"/>
+            </div>
+        </div>    
+        <audio id="player" autoplay>
+            <source src="medias/Sweet-Dreams.mp3" type="audio/mp3">
+        </audio>
         <div class="jorge">
             <img src="img/Jorjao.png" alt="Jorjão Piruleta">
         </div>
+    </header>
 </body>
 </html>
