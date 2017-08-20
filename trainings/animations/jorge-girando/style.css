@@ -38,21 +38,18 @@ body {
     left: 50%;
     margin-top: -250px;
     margin-left: -250px;
-    animation-name: girando;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: spin 2s linear 0s infinite;
 }
 
-@keyframes girando {
+@keyframes spin {
     0%{
         transform: rotate(0deg);
-        width: calc(50% + 200px);
-        height: calc(50% + 200px);
+        width: calc(25% + 200px);
+        height: calc(25% + 200px);
     }
     100%{
         transform: rotate(360deg);
-        width: calc(50% + 400px);
-        height: calc(50% + 400px);
+        width: calc(25% + 300px);
+        height: calc(25% + 300px);
     }
 }
