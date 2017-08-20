@@ -1,3 +1,6 @@
+/* Importing roboto font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
 /* RESET DA PAGINA */
 * {
     margin: 0;
@@ -7,9 +10,27 @@
 
 body {
     background: #777;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background: #4fc3f7;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
     color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
+a.btn:hover {
+    background: #8bf6ff;
+}
