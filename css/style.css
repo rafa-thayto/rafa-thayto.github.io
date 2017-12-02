@@ -1,36 +1,63 @@
 /* Importing roboto font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400');
 
 /* RESET DA PAGINA */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 body {
-    background: #777;
-    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7;
+    font: 100%/1.5 "Roboto", Verdana, sans-serif;
+    height: 100vh;
 }
 
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    background: #4fc3f7;
-}
+.big { font-size: 5em; }
 
-nav li {
-    float: left;
-}
+.meddium { font-size: 2.5em; }
 
-nav li a {
-    display: block;
-    color: azure;
+.middle {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content {
+    max-width: 80%;
+    margin: 25vh auto;
 }
 
-a.btn:hover {
-    background: #8bf6ff;
+.navbar {
+    display: flex;
+    background-image: linear-gradient(to right ,#f35626, #feab3a);
+
+    animation: hue 60s infinite linear;
+}
+
+.navbar a {
+    font-weight: 300;
+    color: #F0FFFF;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+.hue {
+    font-weight: 100;
+    color: #f35626;
+    background-image: linear-gradient(92deg,#f35626,#feab3a);
+    background-clip: text;  
+    -webkit-text-fill-color: transparent;
+
+    animation: hue 60s infinite linear;
+}
+
+.my-paragraph {
+    font-weight: 200;
+}
+
+@keyframes hue {
+    0% { filter: hue-rotate(0deg) }
+    100% { filter: hue-rotate(-360deg) }
 }
